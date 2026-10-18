@@ -26,11 +26,11 @@ const Experience = () => {
         <section className="experience section" id="experience">
             <SectionHeading
                 title="Work Experience"
-                subtitle="6+ Years in IT Operations • Incident Command • Enterprise Deployments"
+            // subtitle="6+ Years in IT Operations • Incident Command • Enterprise Deployments"
             />
 
             <div className="experience__container container">
-                
+
                 {/* Open Chronological Timeline Journey (NO BOXES) */}
                 <div className="experience__timeline-stream">
                     {experienceData.map((exp, index) => {

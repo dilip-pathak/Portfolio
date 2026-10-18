@@ -14,7 +14,7 @@ const highlights = [
         id: 'experience',
         icon: 'bx bx-briefcase-alt-2',
         iconColor: '#0284c7',
-        title: '6+ Years in IT Ops',
+        title: '9+ Years in IT Ops',
         desc: 'Infrastructure & Transitions',
         dividerClass: 'about__highlight-divider--blue',
     },
@@ -100,7 +100,7 @@ const About = () => {
     return (
         <section className="about section" id="about">
             <div className="about__container container">
-                
+
                 {/* Heading */}
                 <div className="about__header">
                     <h2 className="about__title">About me</h2>
@@ -109,7 +109,7 @@ const About = () => {
                 {/* Narrative Text */}
                 <div className="about__text-block">
                     <p className="about__paragraph">
-                        I'm a technically grounded IT professional with six years across infrastructure deployment, changes, maintenance and transitions, covering network, server, telecom, software and hardware.
+                        I'm a technically grounded IT professional with nine years across infrastructure deployment, changes, maintenance and transitions, covering network, server, telecom, software and hardware.
                     </p>
                     <p className="about__paragraph">
                         Today I run IT operations at <strong>Infosys</strong>. I'm focused on incident, problem and change management, SLA performance, compliance and audits. I enjoy bringing several technical and functional teams together to fix problems quickly, and I'm growing toward IT project and operations management.

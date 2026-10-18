@@ -6,78 +6,78 @@ import { motion } from 'framer-motion';
 // Authentic SVGs for Enterprise IT & Infrastructure Tools
 const ServiceNowIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="currentColor" style={{ color: '#81B5A1' }} className="skills__svg-icon">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2V7h2v10z"/>
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2V7h2v10z" />
     </svg>
 );
 
 const ITILIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="none" className="skills__svg-icon">
-        <circle cx="12" cy="12" r="9.5" stroke="#0284c7" strokeWidth="1.8"/>
-        <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#0284c7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="12" cy="12" r="9.5" stroke="#0284c7" strokeWidth="1.8" />
+        <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#0284c7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
 
 const CiscoIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="none" className="skills__svg-icon">
-        <path d="M3 14v3M6 10v7M9 13v4M12 7v10M15 13v4M18 10v7M21 14v3" stroke="#049fd9" strokeWidth="2.2" strokeLinecap="round"/>
+        <path d="M3 14v3M6 10v7M9 13v4M12 7v10M15 13v4M18 10v7M21 14v3" stroke="#049fd9" strokeWidth="2.2" strokeLinecap="round" />
     </svg>
 );
 
 const VisioIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="none" className="skills__svg-icon">
-        <rect x="3" y="3" width="7" height="7" rx="1.5" fill="#3955A3"/>
-        <rect x="14" y="3" width="7" height="7" rx="1.5" fill="#3955A3"/>
-        <rect x="8.5" y="14" width="7" height="7" rx="1.5" fill="#3955A3"/>
-        <path d="M6.5 10v2h5.5v2" stroke="#3955A3" strokeWidth="1.5"/>
+        <rect x="3" y="3" width="7" height="7" rx="1.5" fill="#3955A3" />
+        <rect x="14" y="3" width="7" height="7" rx="1.5" fill="#3955A3" />
+        <rect x="8.5" y="14" width="7" height="7" rx="1.5" fill="#3955A3" />
+        <path d="M6.5 10v2h5.5v2" stroke="#3955A3" strokeWidth="1.5" />
     </svg>
 );
 
 const CMDBIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="none" className="skills__svg-icon">
-        <ellipse cx="12" cy="6" rx="8" ry="3" stroke="#8b5cf6" strokeWidth="1.8"/>
-        <path d="M4 6v5c0 1.66 3.58 3 8 3s8-1.34 8-3V6" stroke="#8b5cf6" strokeWidth="1.8"/>
-        <path d="M4 11v5c0 1.66 3.58 3 8 3s8-1.34 8-3v-5" stroke="#8b5cf6" strokeWidth="1.8"/>
+        <ellipse cx="12" cy="6" rx="8" ry="3" stroke="#8b5cf6" strokeWidth="1.8" />
+        <path d="M4 6v5c0 1.66 3.58 3 8 3s8-1.34 8-3V6" stroke="#8b5cf6" strokeWidth="1.8" />
+        <path d="M4 11v5c0 1.66 3.58 3 8 3s8-1.34 8-3v-5" stroke="#8b5cf6" strokeWidth="1.8" />
     </svg>
 );
 
 const BigFixIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="none" className="skills__svg-icon">
-        <path d="M12 2L4 5v6.5c0 5 3.4 9.7 8 10.5 4.6-.8 8-5.5 8-10.5V5l-8-3z" stroke="#0284c7" strokeWidth="1.8" fill="none"/>
-        <path d="M9 12l2 2 4-4" stroke="#0284c7" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M12 2L4 5v6.5c0 5 3.4 9.7 8 10.5 4.6-.8 8-5.5 8-10.5V5l-8-3z" stroke="#0284c7" strokeWidth="1.8" fill="none" />
+        <path d="M9 12l2 2 4-4" stroke="#0284c7" strokeWidth="2" strokeLinecap="round" />
     </svg>
 );
 
 const CitrixIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="currentColor" style={{ color: '#0ea5e9' }} className="skills__svg-icon">
-        <path d="M12 2a10 10 0 0 0-7.07 17.07l1.41-1.41A8 8 0 1 1 12 20v2a10 10 0 0 0 0-20z"/>
+        <path d="M12 2a10 10 0 0 0-7.07 17.07l1.41-1.41A8 8 0 1 1 12 20v2a10 10 0 0 0 0-20z" />
     </svg>
 );
 
 const PythonIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="none" className="skills__svg-icon">
-        <path d="M11.92 2c-4.14 0-3.88 1.8-3.88 1.8l.01 1.86h3.94v.56H5.43s-2.63.3-2.63 3.96c0 3.66 2.3 3.54 2.3 3.54h1.37v-1.93s-.07-2.3 2.25-2.3h3.88s2.18.04 2.18-2.14V4.14S16.03 2 11.92 2zm-2.16 1.13a.72.72 0 1 1 0 1.44.72.72 0 0 1 0-1.44z" fill="#387eb8"/>
-        <path d="M12.08 22c4.14 0 3.88-1.8 3.88-1.8l-.01-1.86H12.01v-.56h6.56s2.63-.3 2.63-3.96c0-3.66-2.3-3.54-2.3-3.54h-1.37v1.93s.07 2.3-2.25 2.3H11.4s-2.18-.04-2.18 2.14v3.35s1.25 2.14 5.36 2.14zm2.16-1.13a.72.72 0 1 1 0-1.44.72.72 0 0 1 0 1.44z" fill="#ffc331"/>
+        <path d="M11.92 2c-4.14 0-3.88 1.8-3.88 1.8l.01 1.86h3.94v.56H5.43s-2.63.3-2.63 3.96c0 3.66 2.3 3.54 2.3 3.54h1.37v-1.93s-.07-2.3 2.25-2.3h3.88s2.18.04 2.18-2.14V4.14S16.03 2 11.92 2zm-2.16 1.13a.72.72 0 1 1 0 1.44.72.72 0 0 1 0-1.44z" fill="#387eb8" />
+        <path d="M12.08 22c4.14 0 3.88-1.8 3.88-1.8l-.01-1.86H12.01v-.56h6.56s2.63-.3 2.63-3.96c0-3.66-2.3-3.54-2.3-3.54h-1.37v1.93s.07 2.3-2.25 2.3H11.4s-2.18-.04-2.18 2.14v3.35s1.25 2.14 5.36 2.14zm2.16-1.13a.72.72 0 1 1 0-1.44.72.72 0 0 1 0 1.44z" fill="#ffc331" />
     </svg>
 );
 
 const CppIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="none" className="skills__svg-icon">
-        <rect x="2" y="2.5" width="20" height="19" rx="5" fill="#00599C" fillOpacity="0.12" stroke="#00599C" strokeWidth="1.6"/>
+        <rect x="2" y="2.5" width="20" height="19" rx="5" fill="#00599C" fillOpacity="0.12" stroke="#00599C" strokeWidth="1.6" />
         <text x="12" y="15.5" textAnchor="middle" fill="#00599C" fontSize="8.5" fontWeight="800" fontFamily="system-ui, -apple-system, sans-serif" letterSpacing="-0.3px">C/C++</text>
     </svg>
 );
 
 const AzureIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="none" className="skills__svg-icon">
-        <path d="M13.05 3.5L7.45 13.8l3.4 3.7h8.65L13.05 3.5z" fill="#0078D4"/>
-        <path d="M4.5 17.5l5.1-9.4 3.45 6.2-2.7 3.2H4.5z" fill="#50E6FF"/>
+        <path d="M13.05 3.5L7.45 13.8l3.4 3.7h8.65L13.05 3.5z" fill="#0078D4" />
+        <path d="M4.5 17.5l5.1-9.4 3.45 6.2-2.7 3.2H4.5z" fill="#50E6FF" />
     </svg>
 );
 
 const AWSIcon = () => (
     <svg viewBox="0 0 24 24" width="1.1rem" height="1.1rem" fill="none" className="skills__svg-icon">
-        <path d="M6.8 17.8c3.5 1.5 8.1.9 11.7-1 .4-.2.7.2.3.4-3.8 2.2-8.5 2.5-12.4 1-.4-.2-.2-.5.4-.4z" fill="#FF9900"/>
-        <path d="M18.8 16.7c-.3-.5-2.2-.2-3.1 0-.3 0-.4-.2-.1-.5 1.5-.9 3.9-.6 4.2-.2.3.4-.1 2.8-1.5 3.9-.3.2-.5.1-.3-.2.3-.8 1.1-2.5.8-3z" fill="#FF9900"/>
+        <path d="M6.8 17.8c3.5 1.5 8.1.9 11.7-1 .4-.2.7.2.3.4-3.8 2.2-8.5 2.5-12.4 1-.4-.2-.2-.5.4-.4z" fill="#FF9900" />
+        <path d="M18.8 16.7c-.3-.5-2.2-.2-3.1 0-.3 0-.4-.2-.1-.5 1.5-.9 3.9-.6 4.2-.2.3.4-.1 2.8-1.5 3.9-.3.2-.5.1-.3-.2.3-.8 1.1-2.5.8-3z" fill="#FF9900" />
         <text x="12" y="12.5" textAnchor="middle" fill="#FF9900" fontSize="8" fontWeight="800" fontFamily="system-ui, -apple-system, sans-serif" letterSpacing="0.5px">AWS</text>
     </svg>
 );
@@ -218,7 +218,7 @@ const rowVariants = {
 const Skills = () => {
     return (
         <section className="skills section" id="skills">
-            <SectionHeading title="Skills & Competencies" subtitle="IT Operations • Cloud & Technical Systems • ITIL Frameworks" />
+            <SectionHeading title="Skills & Competencies" />
 
             <div className="skills__container container">
                 {/* Open Editorial Stream (NO BOXES) */}
