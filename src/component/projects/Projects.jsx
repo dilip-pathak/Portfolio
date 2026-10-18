@@ -31,7 +31,6 @@ const techPillVariants = {
 
 const ProjectItem = ({ project, index }) => {
     const isEven = index % 2 === 1;
-    const numFormatted = String(index + 1).padStart(2, '0');
 
     return (
         <motion.div
