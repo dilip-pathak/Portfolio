@@ -1,0 +1,51 @@
+.scrollup {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    background-color: var(--accent-cream);
+    padding: 0.45rem 0.65rem;
+    border-radius: 0.65rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: var(--z-tooltip);
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: #1a2026;
+}
+
+.scrollup:hover {
+    background-color: var(--accent-cream-hover);
+    transform: translateY(-3px);
+}
+
+.show-scroll {
+    bottom: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+    .scrollup {
+        right: 1.5rem;
+        padding: 0.25rem 0.4rem;
+        cursor: pointer;
+    }
+
+    .scrollup__icon {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .show-scroll {
+        bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .scrollup {
+        right: 1rem;
+    }
+}

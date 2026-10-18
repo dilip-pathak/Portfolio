@@ -1,0 +1,371 @@
+/*==========================================================
+  ABOUT SECTION - MINIMALIST REFINED REFINED LAYOUT
+  With "About me" heading, 1-row pop oval buttons & compact stats
+==========================================================*/
+
+.about {
+    width: 100%;
+    padding: 4.5rem 0 5.5rem;
+    position: relative;
+    background-color: var(--body-color);
+    transition: background-color 0.35s ease;
+}
+
+.about__container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading: About me */
+.about__header {
+    width: 100%;
+    max-width: 860px;
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+
+.about__title {
+    font-size: clamp(2.1rem, 3.6vw, 2.75rem);
+    font-weight: 700;
+    color: var(--title-color-dark);
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+/* Narrative Text Block */
+.about__text-block {
+    width: 100%;
+    max-width: 860px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+.about__paragraph {
+    font-size: 0.98rem;
+    line-height: 1.76;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.about__paragraph strong {
+    color: var(--title-color-dark);
+    font-weight: 600;
+}
+
+/*==========================================================
+  OVAL BUTTONS: 1 HORIZONTAL ROW WITH POP-UP PRESENCE
+==========================================================*/
+
+.about__oval-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.65rem;
+    width: 100%;
+    max-width: 860px;
+    margin-bottom: 3.25rem;
+    overflow-x: auto;
+    padding: 0.35rem 0.25rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.about__oval-row::-webkit-scrollbar {
+    display: none;
+}
+
+/* Pop-Up Oval Button with Dimensional Shadow */
+.about__oval-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.42rem 0.92rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    background: #ffffff;
+    color: #1e293b;
+    font-size: 0.81rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    box-shadow: 
+        0 4px 12px -2px rgba(0, 0, 0, 0.08), 
+        0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: 
+        border-color 0.25s ease, 
+        color 0.25s ease, 
+        background-color 0.25s ease, 
+        box-shadow 0.25s ease;
+    user-select: none;
+}
+
+.about__oval-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #0284c7;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+/* Tactile Pop on Hover */
+.about__oval-btn:hover {
+    border-color: #0284c7;
+    color: #0284c7;
+    background: #f8fafc;
+    box-shadow: 
+        0 8px 20px -3px rgba(2, 132, 199, 0.25), 
+        0 3px 6px -1px rgba(0, 0, 0, 0.06);
+}
+
+.about__oval-btn:hover .about__oval-dot {
+    transform: scale(1.25);
+}
+
+/* Active Oval Button (Blue outline matching mockup) */
+.about__oval-btn--active {
+    border: 1.5px solid #0284c7;
+    background: #f0f9ff;
+    color: #0284c7;
+    font-weight: 600;
+    box-shadow: 
+        0 4px 14px -1px rgba(2, 132, 199, 0.3), 
+        inset 0 0 0 1px rgba(2, 132, 199, 0.1);
+}
+
+.about__oval-btn--active .about__oval-dot {
+    background-color: #0284c7;
+    transform: scale(1.15);
+}
+
+/*==========================================================
+  HIGHLIGHTS STRIP: UNBOXED STATS WITH VERTICAL DIVIDERS
+  Matching exact icon + title + description layout
+==========================================================*/
+
+.about__highlights-row {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    gap: 1.25rem 1.6rem;
+}
+
+.about__highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    cursor: default;
+    user-select: none;
+}
+
+.about__highlight-icon {
+    font-size: 2.15rem;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.about__highlight-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.15rem;
+    text-align: left;
+}
+
+.about__highlight-title {
+    font-size: 0.94rem;
+    font-weight: 700;
+    color: var(--title-color-dark);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.about__highlight-desc {
+    font-size: 0.77rem;
+    color: var(--text-color);
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
+.about__highlight-divider {
+    width: 2px;
+    height: 38px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    transform-origin: bottom center;
+}
+
+.about__highlight-divider--blue {
+    background-color: #3b82f6;
+}
+
+.about__highlight-divider--purple {
+    background-color: #8b5cf6;
+}
+
+.about__highlight-divider--red {
+    background-color: #ef4444;
+}
+
+.about__highlight-divider--green {
+    background-color: #10b981;
+}
+
+/*==========================================================
+  DARK THEME OVERRIDES
+==========================================================*/
+
+body:not(.light-theme) .about__oval-btn {
+    background: #1e293b;
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #cbd5e1;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+body:not(.light-theme) .about__oval-btn:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+    background: #243248;
+    box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
+}
+
+body:not(.light-theme) .about__oval-btn--active {
+    border-color: #38bdf8;
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    box-shadow: 0 0 0 1.5px #38bdf8, 0 4px 14px rgba(56, 189, 248, 0.25);
+}
+
+body:not(.light-theme) .about__oval-dot {
+    background-color: #38bdf8;
+}
+
+body:not(.light-theme) .about__highlight-title {
+    color: #f1f5f9;
+}
+
+body:not(.light-theme) .about__highlight-desc {
+    color: #94a3b8;
+}
+
+/*==========================================================
+  RESPONSIVE BREAKPOINTS
+==========================================================*/
+
+@media screen and (max-width: 900px) {
+    .about__highlights-row {
+        gap: 1.25rem 1.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 3.5rem 0 4rem;
+    }
+
+    .about__container {
+        padding: 0 1.25rem;
+    }
+
+    .about__header,
+    .about__text-block {
+        text-align: left;
+        width: 100%;
+    }
+
+    .about__title {
+        font-size: clamp(1.85rem, 6.5vw, 2.4rem);
+    }
+
+    .about__paragraph {
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    /* Wrap oval buttons cleanly on mobile so all 4 are visible */
+    .about__oval-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.55rem;
+        padding: 0.25rem 0;
+        margin-bottom: 2.25rem;
+    }
+
+    .about__oval-btn {
+        font-size: 0.78rem;
+        padding: 0.38rem 0.82rem;
+    }
+
+    /* Stack highlights cleanly on mobile */
+    .about__highlights-row {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.2rem;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .about__highlight-item {
+        width: 100%;
+        gap: 0.85rem;
+        justify-content: flex-start;
+    }
+
+    .about__highlight-icon {
+        font-size: 1.95rem;
+    }
+
+    .about__highlight-divider {
+        display: none;
+    }
+
+    .about__highlight-desc {
+        white-space: normal;
+        font-size: 0.76rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about__container {
+        padding: 0 1rem;
+    }
+
+    .about__paragraph {
+        font-size: 0.89rem;
+        line-height: 1.68;
+    }
+
+    .about__oval-row {
+        justify-content: flex-start;
+    }
+
+    .about__oval-btn {
+        font-size: 0.74rem;
+        padding: 0.34rem 0.75rem;
+    }
+
+    .about__highlight-title {
+        font-size: 0.89rem;
+    }
+
+    .about__highlight-icon {
+        font-size: 1.8rem;
+    }
+}

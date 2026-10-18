@@ -1,0 +1,303 @@
+/* =========================================================
+   CERTIFICATIONS SECTION — OPEN EDITORIAL INDEX (NO BOXES)
+   Modern, Sleek, Unboxed Stream Layout
+========================================================= */
+
+.certifications.section {
+    position: relative;
+    padding: 5.5rem 0 5rem;
+    background-color: var(--body-color);
+    transition: background-color 0.35s ease;
+}
+
+.certifications__container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* =========================================================
+   OPEN EDITORIAL CREDENTIAL INDEX
+========================================================= */
+
+.certifications__index {
+    display: flex;
+    flex-direction: column;
+}
+
+.certifications__entry {
+    display: grid;
+    grid-template-columns: 100px 1fr 200px;
+    gap: 2rem;
+    align-items: center;
+    padding: 2.25rem 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    background: transparent;
+    transition: transform 0.25s ease;
+    cursor: default;
+}
+
+.certifications__entry:last-child {
+    border-bottom: none;
+}
+
+.certifications__entry:hover {
+    transform: translateX(4px);
+}
+
+/* Left: Index & Logo */
+.certifications__entry-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.certifications__entry-num {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: #64748b;
+    font-family: monospace;
+}
+
+.certifications__emblem-tile {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1.5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.certifications__logo-svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Middle: Details */
+.certifications__entry-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.certifications__entry-meta-top {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.2rem;
+}
+
+.certifications__cat-tag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.18rem 0.55rem;
+    border-radius: 9999px;
+    border: 1px solid;
+    white-space: nowrap;
+}
+
+.certifications__entry-date {
+    font-size: 0.76rem;
+    font-weight: 500;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.certifications__entry-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--title-color-dark);
+    margin: 0;
+    letter-spacing: -0.015em;
+    line-height: 1.35;
+}
+
+.certifications__entry-issuer {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--title-color);
+    margin: 0 0 0.25rem;
+}
+
+.certifications__entry-issuer i {
+    font-size: 1rem;
+}
+
+.certifications__entry-desc {
+    font-size: 0.83rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0 0 0.75rem;
+}
+
+.certifications__entry-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.certifications__skill-pill {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--title-color-dark);
+    background: rgba(148, 163, 184, 0.12);
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+/* Right: Action Column */
+.certifications__entry-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.certifications__verify-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 1.1rem;
+    border-radius: 9999px;
+    background: #0284c7;
+    color: #ffffff !important;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.certifications__verify-action-btn:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.4);
+}
+
+.certifications__verified-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #64748b;
+    background: rgba(148, 163, 184, 0.12);
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    user-select: none;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   DARK THEME OVERRIDES
+========================================================= */
+
+body:not(.light-theme) .certifications__emblem-tile {
+    background: #ffffff;
+}
+
+body:not(.light-theme) .certifications__skill-pill {
+    background: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+}
+
+body:not(.light-theme) .certifications__verify-action-btn {
+    background: #38bdf8;
+    color: #0f172a !important;
+    box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+}
+
+body:not(.light-theme) .certifications__verify-action-btn:hover {
+    background: #7dd3fc;
+    box-shadow: 0 6px 18px rgba(56, 189, 248, 0.45);
+}
+
+body:not(.light-theme) .certifications__verified-indicator {
+    background: rgba(255, 255, 255, 0.08);
+    color: #94a3b8;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media screen and (max-width: 900px) {
+    .certifications__entry {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 1.85rem 0;
+    }
+
+    .certifications__entry-action {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .certifications.section {
+        padding: 3.5rem 0 3rem;
+    }
+
+    .certifications__entry {
+        padding: 1.65rem 0;
+        gap: 1.15rem;
+    }
+
+    .certifications__entry-title {
+        font-size: 1.1rem;
+    }
+
+    .certifications__entry-desc {
+        font-size: 0.84rem;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .certifications__container {
+        padding: 0 1rem;
+    }
+
+    .certifications__entry {
+        padding: 1.4rem 0;
+        gap: 1rem;
+    }
+
+    .certifications__emblem-tile {
+        width: 42px;
+        height: 42px;
+    }
+
+    .certifications__entry-title {
+        font-size: 1.02rem;
+    }
+
+    .certifications__entry-desc {
+        font-size: 0.81rem;
+    }
+
+    .certifications__skill-pill {
+        font-size: 0.68rem;
+        padding: 0.18rem 0.5rem;
+    }
+
+    .certifications__verify-action-btn,
+    .certifications__verified-indicator {
+        font-size: 0.78rem;
+        padding: 0.38rem 0.85rem;
+    }
+}

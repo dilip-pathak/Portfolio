@@ -1,0 +1,208 @@
+/* =========================================================
+   QUALIFICATION SECTION — OPEN EDITORIAL LINEAGE (NO BOXES)
+   Minimalist, High-Fashion Editorial Typography
+========================================================= */
+
+.qualification.section {
+    position: relative;
+    padding: 5.5rem 0 5rem;
+    background-color: var(--body-color);
+    transition: background-color 0.35s ease;
+}
+
+.qualification__container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* =========================================================
+   3-COLUMN EDITORIAL LINEAGE
+========================================================= */
+
+.qualification__lineage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.qualification__col {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    cursor: default;
+}
+
+/* Year Row */
+.qualification__year-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.65rem;
+}
+
+.qualification__big-year {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-family: inherit;
+}
+
+.qualification__level-pill {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 0.2rem 0.55rem;
+    border-radius: 9999px;
+    border: 1px solid;
+    white-space: nowrap;
+}
+
+/* Fine Colored Accent Line */
+.qualification__accent-line {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    margin-bottom: 1.35rem;
+    display: block;
+    opacity: 0.85;
+}
+
+/* Body */
+.qualification__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.qualification__degree {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--title-color-dark);
+    margin: 0;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+.qualification__institution {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #0284c7;
+    margin: 0 0 0.2rem;
+}
+
+.qualification__location {
+    font-size: 0.77rem;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.85rem;
+}
+
+.qualification__narrative {
+    font-size: 0.84rem;
+    line-height: 1.62;
+    color: var(--text-color);
+    margin: 0 0 1.25rem;
+}
+
+/* Chips */
+.qualification__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.qualification__chip {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--title-color-dark);
+    background: rgba(148, 163, 184, 0.12);
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+
+
+/* =========================================================
+   DARK THEME OVERRIDES
+========================================================= */
+
+body:not(.light-theme) .qualification__institution {
+    color: #38bdf8;
+}
+
+body:not(.light-theme) .qualification__chip {
+    background: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media screen and (max-width: 860px) {
+    .qualification__lineage {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .qualification.section {
+        padding: 3.5rem 0 3rem;
+    }
+
+    .qualification__lineage {
+        gap: 2rem;
+    }
+
+    .qualification__big-year {
+        font-size: 1.85rem;
+    }
+
+    .qualification__degree {
+        font-size: 1.05rem;
+    }
+
+    .qualification__narrative {
+        font-size: 0.83rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .qualification__container {
+        padding: 0 1rem;
+    }
+
+    .qualification__col {
+        padding: 0 0.25rem;
+    }
+
+    .qualification__big-year {
+        font-size: 1.65rem;
+    }
+
+    .qualification__degree {
+        font-size: 0.98rem;
+    }
+
+    .qualification__institution {
+        font-size: 0.86rem;
+    }
+
+    .qualification__chip {
+        font-size: 0.68rem;
+        padding: 0.18rem 0.48rem;
+    }
+}

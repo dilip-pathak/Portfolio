@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="64" height="64" fill="none">
+    <defs>
+        <linearGradient id="favBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0284c7" />
+            <stop offset="100%" stop-color="#38bdf8" />
+        </linearGradient>
+    </defs>
+    <!-- D: Clean precision geometry in deep dark slate (No enclosing square) -->
+    <path
+        d="M6 7h10.5C23.5 7 28 11.8 28 18.5S23.5 30 16.5 30H6V7z"
+        stroke="#0f172a"
+        stroke-width="3.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    />
+    <!-- P: Intertwining stroke in vibrant cyan blue -->
+    <path
+        d="M17 14h9c4.2 0 7.5 3 7.5 7s-3.3 7-7.5 7h-9V37"
+        stroke="url(#favBlue)"
+        stroke-width="3.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    />
+    <!-- Operational status node -->
+    <circle cx="34" cy="9" r="3.2" fill="#10b981" />
+</svg>
